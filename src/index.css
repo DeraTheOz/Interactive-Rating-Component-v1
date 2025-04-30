@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    	/********* Colors *********/
+	--white: hsl(0, 0%, 100%);
+	--orange: #fc7614;
+	--light-grey: hsl(217, 12%, 63%);
+	--medium-grey: hsl(216, 12%, 54%);
+	--dark-blue: hsl(213, 19%, 18%);
+	--very-dark-blue: hsl(216, 12%, 8%);
+	--very-dark-blue-gradient: hsla(216, 12%, 8%, 0.2);
+    
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Overpass', Sans-Serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	min-height: 100svh;
+	color: var(--light-grey);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2.4rem;
+	background-color: var(--very-dark-blue);
+    
+    
+}
