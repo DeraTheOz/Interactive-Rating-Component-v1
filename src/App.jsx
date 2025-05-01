@@ -3,7 +3,6 @@ import { useState } from 'react';
 function App() {
     const [curClicked, setCurClicked] = useState(null);
     const [isClicked, setisClicked] = useState(false);
-
     const rateData = Array.from({ length: 5 }, (_, i) => i + 1);
 
     function handleCurClicked(num) {
@@ -77,7 +76,7 @@ function Rating({
             </ul>
 
             <button
-                className="font-semibold uppercase text-center text-white tracking-widest bg-orange min-w-full 
+                className="font-semibold uppercase text-center text-white tracking-widest bg-orange min-w-full
                 py-3 px-6 rounded-full transition-all duration-300 ease-in-out hover:text-orange
                 active:text-orange hover:bg-white active:bg-white focus:outline-none"
                 onClick={onShowResult}>
@@ -92,7 +91,7 @@ function Result({ isClicked, rateData, curClicked }) {
         <div
             className={`${
                 isClicked ? 'flex' : 'hidden'
-            } flex-col items-center justify-center max-w-sm min-h-[24.438rem] p-7 rounded-3xl poin bg-dark-blue transition-display duration-500 ease-in-out`}>
+            } flex-col items-center justify-center max-w-sm min-h-[24.438rem] p-7 rounded-3xl bg-dark-blue transition-display duration-500 ease-in-out`}>
             <img
                 src="images/illustration-thank-you.svg"
                 alt="Thank you Illustration"
