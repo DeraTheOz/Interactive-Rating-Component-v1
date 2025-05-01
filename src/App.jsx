@@ -96,8 +96,9 @@ function Result({ isClicked, rateData, curClicked }) {
             <img
                 src="images/illustration-thank-you.svg"
                 alt="Thank you Illustration"
-                width="162"
-                height="108"
+                className="w-[10.125rem] h-[6.75rem] object-cover"
+                loading="lazy"
+                
             />
             <p className="text-orange bg-very-dark-blue-gradient py-2 px-4 mt-6 rounded-full">
                 You selected {curClicked} out of {rateData.length}
