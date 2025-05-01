@@ -10,6 +10,7 @@ function App() {
     }
 
     function handleShowResult() {
+        if (!curClicked) return;
         setisClicked(true);
 
         setTimeout(() => {
